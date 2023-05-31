@@ -140,19 +140,21 @@
 nomer = 1
 
 def talon(bukva):
+    global nomer
     print('ваш номер', bukva, nomer)
+    nomer += 1
     pass
 
 while True:
     otvet = input('Куда хотите: 1 - банк, 2 - цирк, 3 - поликлиника\n')
     if otvet == '1':
         talon('Б')
-        nomer += 1
+        # nomer += 1
     elif otvet == '2':
         talon('Ц')
-        nomer += 1
+        # nomer += 1
     elif otvet == '3':
         talon('П')
-        nomer += 1
+        # nomer += 1
     elif otvet == 'q':
         break
